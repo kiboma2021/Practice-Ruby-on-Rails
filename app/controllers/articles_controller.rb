@@ -28,7 +28,7 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
 
     if @article.update(article_params)
-      redirect_to root_path
+      redirect_to @article
     else
       render :edit, status: :unprocessable_entity
     end
