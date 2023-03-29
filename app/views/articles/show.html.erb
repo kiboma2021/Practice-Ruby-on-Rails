@@ -17,17 +17,4 @@
 
 <h2>Add a comment </h2>
 
-<%= form_with model: [@article, @article.comments.build ] do |form| %>
-    <div>
-        <%= form.label :commenter %> <br>
-        <%= form.text_field :commenter %>
-    </div>
-    <div>
-        <%= form.label :body %> <br>
-        <%= form.text_area :body %>
-    </div>
-    <div>
-        <%= form.submit %> <br>
-    </div>
-
-<% end %>
+<%= render 'comments/form' %>
