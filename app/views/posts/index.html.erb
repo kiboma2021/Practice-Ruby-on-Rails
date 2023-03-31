@@ -1,1 +1,11 @@
 <h1>Posts Page</h1>
+
+<% @posts.each do |post| %>
+
+<p>
+Id: <%= post.user_id %>
+Title: <%= post.title %>
+Text: <%= post.text %>
+</p>
+
+<% end %>
