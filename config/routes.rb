@@ -5,4 +5,5 @@ Rails.application.routes.draw do
    root "users#index"
 
    get "/comments", to: "comments#index"
+   get "/posts", to: "posts#index"
 end
