@@ -2,7 +2,7 @@
 <% @users.each do |user| %>
 <p>
     <strong><%= user.name %> :</strong>
-    <%= user.bio %>
+    <%= link_to user.bio, user %>
 </p>
 
 <% end %>
